@@ -1,0 +1,29 @@
+.kasa-banner {
+    margin: 1rem auto;
+    max-width: 85%;
+	padding: 32px;
+	display: flex;
+	/* justify-content: flex-end; */
+	/* flex-direction: row; */
+	align-items: center;
+    justify-content: space-between;
+}
+
+.kasa-logo {
+	width: 200px;
+}
+
+.banner-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.banner-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.banner-links a:hover {
+    color: gray;
+}

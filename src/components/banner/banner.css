@@ -1,0 +1,27 @@
+.home-banner-1 {
+    margin: 5rem auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 25px;
+    max-width: 85%;
+    height: 223px;
+}
+
+.home-banner {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.6);
+}
+
+.banner-text {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    max-width: 90%;
+}
