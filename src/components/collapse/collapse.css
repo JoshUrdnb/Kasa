@@ -1,0 +1,46 @@
+.collapse-container {
+    max-width: 80%;
+    margin: 10rem auto 0;
+    height: 50vh;
+}
+
+.collapse {
+    margin: 50px 0;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ff5e5e;
+    color: #FBFBFB;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.collapse-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.collapse-header .arrow {
+    transition: transform 0.3s ease;
+}
+
+.collapse-header .arrow.open {
+    transform: rotate(180deg);
+}
+
+.collapse-content {
+    max-height: 200px;
+    padding: 15px;
+    background-color: #FBFBFB;
+    color: #333;
+    font-size: 16px;
+    animation: expand 0.3s ease;
+}
