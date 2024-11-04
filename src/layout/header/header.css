@@ -13,17 +13,18 @@
 	width: 200px;
 }
 
-.banner-links {
+.nav-links {
     display: flex;
     gap: 3rem;
+    font-size: 34px;
 }
 
-.banner-links a {
+.nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-.banner-links a:hover {
+.nav-links a:hover {
     color: gray;
 }
