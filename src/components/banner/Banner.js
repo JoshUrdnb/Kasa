@@ -1,11 +1,10 @@
-import HomeBanner from '../../assets/Image-banner.png'
 import './banner.css'
 
-function Banner() {
+function Banner({myBanner, bannerText}) {
 	return (
-		<div className='home-banner-1'>
-			<img src={HomeBanner} alt='home banniere' className='home-banner' />
-			<div className='banner-text'>Chez vous, partout et ailleurs</div>
+		<div className='banner-container'>
+			<img src={myBanner} alt='banniere' className='banner' />
+			<p className='banner-text'>{bannerText}</p>
 		</div>
 	)
 }

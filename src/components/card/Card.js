@@ -1,22 +1,21 @@
-import { kasaData } from '../../datas/data'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import './card.css'
 
-function Card() {
+function Card({ housings }) { //Je passe {housings} comme argument de ma fonction Card.
     return (
-        <main>
-            <div className="logements-grid">
-                {kasaData.map((logement) => (
-                    <div key={logement.id} className="logement-card">
-                        <Link to="/accommodation">
-                        <img src={logement.cover} alt={logement.title} className="logement-cover" />
-                        <div className="logement-title">{logement.title}</div>
+        <div className='container'>
+            <div className="housings-grid">
+                {housings.map((housing) => (
+                    <div key={housing.id} className="housing-card">
+                        <Link to={`/accommodation/${housing.id}`}>
+                            <img src={housing.cover} alt={housing.title} className="housing-cover" />
+                            <div className="logement-title">{housing.title}</div>
                         </Link>
                     </div>
                 ))}
             </div>
-        </main>
-    );
+        </div>
+    )
 }
 
 export default Card

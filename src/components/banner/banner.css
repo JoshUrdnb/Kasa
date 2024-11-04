@@ -1,4 +1,4 @@
-.home-banner-1 {
+.banner-container {
     margin: 5rem auto;
     position: relative;
     display: flex;
@@ -10,7 +10,7 @@
     height: 223px;
 }
 
-.home-banner {
+.banner {
     width: 100%;
     height: auto;
     filter: brightness(0.6);

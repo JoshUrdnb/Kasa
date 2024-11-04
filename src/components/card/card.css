@@ -1,14 +1,13 @@
-main {
+.container {
     padding: 20px;
     text-align: center;
-
     /* margin: 0 auto; */
     /* max-width: 80%; */
     display: flex;
     justify-content: center;
 }
 
-.logements-grid {
+.housings-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8rem;
@@ -19,18 +18,18 @@ main {
 }
 
 @media (max-width: 768px) {
-    .logements-grid {
+    .housings-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .logements-grid {
+    .housings-grid {
         grid-template-columns: 1fr;
     }
 }
 
-.logement-card {
+.housing-card {
     width: 340px;
     height: 340px;
     border-radius: 25px;
@@ -40,17 +39,17 @@ main {
     transition: transform 0.2s;
 }
 
-.logement-card:hover {
+.housing-card:hover {
     transform: scale(1.05);
 }
 
-.logement-cover {
+.housing-cover {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.logement-title {
+.housing-title {
     position: absolute;
     bottom: 10px;
     left: 10px;
