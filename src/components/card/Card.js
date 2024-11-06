@@ -1,19 +1,13 @@
 import { Link } from 'react-router-dom'
 import './card.css'
 
-function Card({ housings }) { //Je passe {housings} comme argument de ma fonction Card.
+function Card({ housing }) { // Reçoit un logement individuel en tant que prop
     return (
-        <div className='container'>
-            <div className="housings-grid">
-                {housings.map((housing) => (
-                    <div key={housing.id} className="housing-card">
-                        <Link to={`/accommodation/${housing.id}`}>
-                            <img src={housing.cover} alt={housing.title} className="housing-cover" />
-                            <div className="logement-title">{housing.title}</div>
-                        </Link>
-                    </div>
-                ))}
-            </div>
+        <div className="housing-card">
+            <Link to={`/accommodation/${housing.id}`}>
+                <img src={housing.cover} alt={housing.title} className="housing-cover" />
+                <div className="housing-title">{housing.title}</div>
+            </Link>
         </div>
     )
 }
