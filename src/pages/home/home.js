@@ -10,7 +10,7 @@ export default function Home() {
 		<div className='home'>
 			<Header />
 			<Banner myBanner={HomeBanner} bannerText="Chez vous, partout et ailleurs" />
-			<Cards housings={kasaData} /> {/* Je passe kasaData comme prop à Card en tant que housings*/}
+			<Cards housings={kasaData} /> {/* Je passe kasaData comme prop à Cards en tant que housings*/}
 			<Footer />
 		</div>
 	)
