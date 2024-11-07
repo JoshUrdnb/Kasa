@@ -4,6 +4,7 @@ import { kasaData } from '../../datas/data' // Importe les données de logements
 import Header from '../../layout/header/Header'
 import Footer from '../../layout/footer/Footer'
 import Collapse from '../../components/collapse/Collapse'
+import Tags from '../../components/tags/Tags'
 
 
 export default function Accommodation() {
@@ -18,6 +19,13 @@ export default function Accommodation() {
 					<h1 className="accommodation-title">{housingData.title}</h1>
 					<p className="accommodation-location">{housingData.location}</p>
 				</div>
+
+				<div className="tags-container">
+					{housingData.tags.map((tag, index) =>
+						<Tags key={index} tag={tag} />
+					)}
+				</div>
+
 				<div className="collapses">
 					<Collapse title="Description" content={housingData.description} />
 					<Collapse title="Équipments" content={
