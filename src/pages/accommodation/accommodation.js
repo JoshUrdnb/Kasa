@@ -5,6 +5,7 @@ import Header from '../../layout/header/Header'
 import Footer from '../../layout/footer/Footer'
 import Collapse from '../../components/collapse/Collapse'
 import Tags from '../../components/tags/Tags'
+import Host from '../../components/Profile/Profile'
 
 
 export default function Accommodation() {
@@ -24,6 +25,10 @@ export default function Accommodation() {
 					{housingData.tags.map((tag, index) =>
 						<Tags key={index} tag={tag} />
 					)}
+				</div>
+
+				<div className="profile-container">
+					<Host host={housingData.host} />
 				</div>
 
 				<div className="collapses-container">

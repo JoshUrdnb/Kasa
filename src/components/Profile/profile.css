@@ -1,0 +1,15 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.host-name {
+    font-size: 25px;
+    color: #FF6060;
+}
+
+.host-pic {
+    border-radius: 50%;
+}
