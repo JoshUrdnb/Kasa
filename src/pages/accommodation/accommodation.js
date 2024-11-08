@@ -26,7 +26,7 @@ export default function Accommodation() {
 					)}
 				</div>
 
-				<div className="collapses">
+				<div className="collapses-container">
 					<Collapse title="Description" content={housingData.description} />
 					<Collapse title="Équipments" content={
 						<ul className="collapse-style-list" >
