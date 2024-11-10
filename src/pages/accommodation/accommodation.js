@@ -5,7 +5,8 @@ import Header from '../../layout/header/Header'
 import Footer from '../../layout/footer/Footer'
 import Collapse from '../../components/collapse/Collapse'
 import Tags from '../../components/tags/Tags'
-import Host from '../../components/Profile/Profile'
+import Host from '../../components/profile/Profile'
+import Rating from '../../components/rating/Rating'
 
 
 export default function Accommodation() {
@@ -25,6 +26,10 @@ export default function Accommodation() {
 					{housingData.tags.map((tag, index) =>
 						<Tags key={index} tag={tag} />
 					)}
+				</div>
+
+				<div className="rating-container">
+					<Rating rate={housingData.rating} />
 				</div>
 
 				<div className="profile-container">
