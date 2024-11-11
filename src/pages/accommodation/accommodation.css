@@ -1,7 +1,10 @@
+.accommodation {
+    margin: 5rem auto 0;
+    max-width: 1400px;
+}
+
 .accommodation-container {
     margin: 0 auto;
-    max-width: 80%;
-    min-height: 60vh;
 }
 
 .tags-container {
@@ -18,4 +21,8 @@
 
 .collapse-style-list {
     list-style-type: none;
+}
+
+.accommodation-title {
+    color: #FF6060;
 }

@@ -14,45 +14,51 @@ export default function Accommodation() {
 	const housingData = kasaData.find((housing) => housing.id === id) // Cherche le logement correspondant dans kasaData
 
 	return (
-		<div className='accommodation'>
+		<div className='accommodation-main'>
+
 			<Header />
 
-			<div className="gallery-container">
-				<Slider gallery={housingData} />
+			<div className='accommodation'>
+
+				<div className="gallery-accommodation-container">
+					<Slider gallery={housingData} />
+				</div>
+
+						<div className="accommodation-container">
+							<div className="accommodation-details">
+								<h1 className="accommodation-title">{housingData.title}</h1>
+								<p className="accommodation-location">{housingData.location}</p>
+							</div>
+
+							<div className="tags-container">
+								{housingData.tags.map((tag, index) =>
+									<Tags key={index} tag={tag} />
+								)}
+							</div>
+
+							<div className="profile-container">
+								<Host host={housingData.host} />
+							</div>
+
+							<div className="rating-container">
+								<Rating rate={housingData.rating} />
+							</div>
+
+					<div className="collapses-container">
+						<Collapse title="Description" content={housingData.description} />
+						<Collapse title="Équipments" content={
+							<ul className="collapse-style-list" >
+								{housingData.equipments.map((equipment, index) => (
+									<li key={index}>{equipment}</li>
+								))}
+							</ul>
+						} />
+					</div>
+				</div>
 			</div>
 
-			<div className="accommodation-container">
-				<div className="accommodation-details">
-					<h1 className="accommodation-title">{housingData.title}</h1>
-					<p className="accommodation-location">{housingData.location}</p>
-				</div>
-
-				<div className="tags-container">
-					{housingData.tags.map((tag, index) =>
-						<Tags key={index} tag={tag} />
-					)}
-				</div>
-
-				<div className="rating-container">
-					<Rating rate={housingData.rating} />
-				</div>
-
-				<div className="profile-container">
-					<Host host={housingData.host} />
-				</div>
-
-				<div className="collapses-container">
-					<Collapse title="Description" content={housingData.description} />
-					<Collapse title="Équipments" content={
-						<ul className="collapse-style-list" >
-							{housingData.equipments.map((equipment, index) => (
-								<li key={index}>{equipment}</li>
-							))}
-						</ul>
-					} />
-				</div>
-			</div>
 			<Footer />
+
 		</div>
 	)
 }
