@@ -8,6 +8,7 @@ function Gallery({gallery}) {
                     key={index} 
                     src={picture} 
                     alt={`${gallery.name} ${index + 1}`} 
+                    className="gallery-picture"
                 />
             ))}
         </div>

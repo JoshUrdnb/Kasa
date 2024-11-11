@@ -7,7 +7,7 @@ import Collapse from '../../components/collapse/Collapse'
 import Tags from '../../components/tags/Tags'
 import Host from '../../components/profile/Profile'
 import Rating from '../../components/rating/Rating'
-import Gallery from '../../components/gallery/Gallery'
+import Slider from '../../components/carousel/Carousel'
 
 export default function Accommodation() {
 	const { id } = useParams() // Récupère l'ID du logement depuis l'URL
@@ -18,8 +18,8 @@ export default function Accommodation() {
 			<Header />
 
 			<div className="gallery-container">
-					<Gallery gallery={housingData} />
-				</div>
+				<Slider gallery={housingData} />
+			</div>
 
 			<div className="accommodation-container">
 				<div className="accommodation-details">
