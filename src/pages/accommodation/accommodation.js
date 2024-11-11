@@ -7,7 +7,7 @@ import Collapse from '../../components/collapse/Collapse'
 import Tags from '../../components/tags/Tags'
 import Host from '../../components/profile/Profile'
 import Rating from '../../components/rating/Rating'
-
+import Gallery from '../../components/gallery/Gallery'
 
 export default function Accommodation() {
 	const { id } = useParams() // Récupère l'ID du logement depuis l'URL
@@ -16,6 +16,11 @@ export default function Accommodation() {
 	return (
 		<div className='accommodation'>
 			<Header />
+
+			<div className="gallery-container">
+					<Gallery gallery={housingData} />
+				</div>
+
 			<div className="accommodation-container">
 				<div className="accommodation-details">
 					<h1 className="accommodation-title">{housingData.title}</h1>
