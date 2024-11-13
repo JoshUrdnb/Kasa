@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './collapse.css'
 
-function Collapse({ title, content }) {
+function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggleCollapse = () => {
@@ -22,7 +22,7 @@ function Collapse({ title, content }) {
             </div>
             {isOpen && (
                 <div className="collapse-content">
-                    <p>{content}</p>
+                    <p>{children}</p>
                 </div>
             )}
         </div>

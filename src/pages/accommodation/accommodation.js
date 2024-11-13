@@ -24,28 +24,32 @@ export default function Accommodation() {
 					<Slider gallery={housingData} />
 				</div>
 
-						<div className="accommodation-container">
-							<div className="accommodation-details">
-								<h1 className="accommodation-title">{housingData.title}</h1>
-								<p className="accommodation-location">{housingData.location}</p>
-							</div>
+				<div className="accommodation-container">
+					<div className="accommodation-details">
+						<h1 className="accommodation-title">{housingData.title}</h1>
+						<p className="accommodation-location">{housingData.location}</p>
+					</div>
 
-							<div className="tags-container">
-								{housingData.tags.map((tag, index) =>
-									<Tags key={index} tag={tag} />
-								)}
-							</div>
+					<div className="tags-container">
+						{housingData.tags.map((tag, index) =>
+							<Tags key={index} tag={tag} />
+						)}
+					</div>
 
-							<div className="profile-container">
-								<Host host={housingData.host} />
-							</div>
+					<div className="profile-container">
+						<Host host={housingData.host} />
+					</div>
 
-							<div className="rating-container">
-								<Rating rate={housingData.rating} />
-							</div>
+					<div className="rating-container">
+						<Rating rate={housingData.rating} />
+					</div>
 
 					<div className="collapses-container">
-						<Collapse title="Description" content={housingData.description} />
+
+						<Collapse title="Description">
+							{housingData.description}
+						</Collapse>
+
 						<Collapse title="Équipments" content={
 							<ul className="collapse-style-list" >
 								{housingData.equipments.map((equipment, index) => (
