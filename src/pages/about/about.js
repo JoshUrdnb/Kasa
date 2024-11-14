@@ -1,13 +1,13 @@
-import Header from '../../layout/header/Header'
+// import Header from '../../layout/header/Header'
 import Banner from '../../components/banner/Banner'
 import AboutBanner from '../../assets/image-banner-about.png'
 import Collapse from '../../components/collapse/Collapse'
-import Footer from '../../layout/footer/Footer'
+// import Footer from '../../layout/footer/Footer'
 
 export default function About() {
 	return (
 		<div className='about'>
-			<Header />
+			{/* <Header /> */}
 			<Banner myBanner={AboutBanner} />
 			<div className='collapse-container'>
 				<div className="collapses">
@@ -28,7 +28,7 @@ export default function About() {
 					</Collapse>
 				</div>
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	)
 }

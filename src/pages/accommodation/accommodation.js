@@ -1,8 +1,8 @@
 import './accommodation.css'
 import { useParams } from 'react-router-dom' // Pour accéder aux paramètres d'URL
 import { kasaData } from '../../datas/data' // Importe les données de logements
-import Header from '../../layout/header/Header'
-import Footer from '../../layout/footer/Footer'
+// import Header from '../../layout/header/Header'
+// import Footer from '../../layout/footer/Footer'
 import Carousel from '../../components/carousel/Carousel'
 import Tags from '../../components/tags/Tags'
 import Profile from '../../components/profile/Profile'
@@ -16,7 +16,7 @@ export default function Accommodation() {
 	return (
 		<div className='accommodation-main'>
 
-			<Header />
+			{/* <Header /> */}
 
 			<div className='accommodation'>
 
@@ -65,7 +65,7 @@ export default function Accommodation() {
 				</div>
 			</div>
 
-			<Footer />
+			{/* <Footer /> */}
 
 		</div>
 	)
