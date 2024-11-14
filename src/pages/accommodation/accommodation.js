@@ -31,9 +31,11 @@ export default function Accommodation() {
 					</div>
 
 					<div className="tags-container">
-						{housingData.tags.map((tag, index) =>
-							<Tags key={index} tag={tag} />
-						)}
+						{
+							housingData.tags.map((tag, index) =>
+								<Tags key={index} tag={tag} />
+							)
+						}
 					</div>
 
 					<div className="profile-container">
@@ -50,13 +52,15 @@ export default function Accommodation() {
 							{housingData.description}
 						</Collapse>
 
-						<Collapse title="Équipments" content={
-							<ul className="collapse-style-list" >
-								{housingData.equipments.map((equipment, index) => (
-									<li key={index}>{equipment}</li>
-								))}
-							</ul>
-						} />
+						<Collapse title="Équipments">
+							{
+								<ul className="collapse-style-list" >
+									{housingData.equipments.map((equipment, index) => (
+										<li key={index}>{equipment}</li>
+									))}
+								</ul>
+							}
+						</Collapse>
 					</div>
 				</div>
 			</div>

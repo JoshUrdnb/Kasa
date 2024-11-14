@@ -22,7 +22,7 @@ function Collapse({ title, children }) {
             </div>
             {isOpen && (
                 <div className="collapse-content">
-                    <p>{children}</p>
+                    <span>{children}</span>
                 </div>
             )}
         </div>
