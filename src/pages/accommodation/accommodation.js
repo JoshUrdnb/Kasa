@@ -3,11 +3,11 @@ import { useParams } from 'react-router-dom' // Pour accéder aux paramètres d'
 import { kasaData } from '../../datas/data' // Importe les données de logements
 import Header from '../../layout/header/Header'
 import Footer from '../../layout/footer/Footer'
-import Collapse from '../../components/collapse/Collapse'
+import Carousel from '../../components/carousel/Carousel'
 import Tags from '../../components/tags/Tags'
-import Host from '../../components/profile/Profile'
+import Profile from '../../components/profile/Profile'
 import Rating from '../../components/rating/Rating'
-import Slider from '../../components/carousel/Carousel'
+import Collapse from '../../components/collapse/Collapse'
 
 export default function Accommodation() {
 	const { id } = useParams() // Récupère l'ID du logement depuis l'URL
@@ -21,7 +21,7 @@ export default function Accommodation() {
 			<div className='accommodation'>
 
 				<div className="gallery-accommodation-container">
-					<Slider gallery={housingData} />
+					<Carousel gallery={housingData} />
 				</div>
 
 				<div className="accommodation-container">
@@ -37,7 +37,7 @@ export default function Accommodation() {
 					</div>
 
 					<div className="profile-container">
-						<Host host={housingData.host} />
+						<Profile host={housingData.host} />
 					</div>
 
 					<div className="rating-container">
