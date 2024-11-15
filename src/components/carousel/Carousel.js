@@ -4,7 +4,6 @@ import './carousel.css'
 
 function Slider({ gallery }) {
     const [currentIndex, setCurrentIndex] = useState(0) // Index de l'image affichée
-
     const pictures = gallery.pictures // Récupère les images
 
     const nextSlide = () => {
@@ -25,6 +24,10 @@ function Slider({ gallery }) {
             </button>
 
             <Gallery gallery={{ pictures: [pictures[currentIndex]] }} />
+
+            <div className="slider-pagination">
+                {currentIndex + 1} / {pictures.length}
+            </div>
 
             <button className="slider-button next" onClick={nextSlide}>
                 <svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
