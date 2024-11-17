@@ -25,3 +25,16 @@
     padding: 1rem;
     max-width: 90%;
 }
+
+@media screen and (max-width: 425px) {
+
+    .banner-container {
+        margin: 2rem auto;
+        height: 111px;
+    }
+
+    .banner-text {
+        font-size: 20px;
+    }
+
+}

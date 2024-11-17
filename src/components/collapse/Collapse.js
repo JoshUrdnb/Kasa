@@ -9,7 +9,7 @@ function Collapse({ title, children }) {
     };
 
     return (
-        <div className="collapse">
+        <section className="collapse">
             <div className="collapse-header" onClick={toggleCollapse}>
                 <span>{title}</span>
                 <span>{isOpen ? <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@ function Collapse({ title, children }) {
                     <span>{children}</span>
                 </div>
             )}
-        </div>
+        </section>
     )
 }
 

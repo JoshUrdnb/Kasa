@@ -1,7 +1,7 @@
 .collapse-container {
     max-width: 80%;
     margin: 10rem auto 0;
-    height: 50vh;
+    /* height: 50vh; */
 }
 
 .collapse {
@@ -43,4 +43,16 @@
     color: #333;
     font-size: 16px;
     animation: expand 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+    .collapse-container {
+        margin: 10px auto;
+    }
+
+    .collapse {
+        margin: 1rem 0;
+    }
+
 }

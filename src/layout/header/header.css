@@ -1,4 +1,4 @@
-.kasa-banner {
+.kasa-header {
     margin: 1rem auto;
     max-width: 85%;
 	padding: 32px;
@@ -29,4 +29,40 @@
 
 .nav-links .active-link {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 375px) {
+
+    .kasa-header {
+        margin: 15px auto;
+        padding: 5px;
+    }
+
+    .kasa-logo {
+        width: 100px;
+    }
+
+    .nav-links {
+        font-size: 12px;
+        text-transform: uppercase;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+    .kasa-header {
+        margin: 15px auto;
+        padding: 5px;
+    }
+
+    .kasa-logo {
+        width: 145px;
+    }
+
+    .nav-links {
+        font-size: 14px;
+        text-transform: uppercase;
+        gap: 15px;
+    }
 }
