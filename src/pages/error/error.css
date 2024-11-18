@@ -26,3 +26,43 @@
     text-decoration: underline;
     margin-top: 50px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .error-container {
+        min-height: 60vh;
+    }
+
+    .error-number {
+        font-size: 240px;
+    }
+    
+    .error-text {
+        font-size: 28px;
+    }
+    
+    .error-link {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .error-container {
+        min-height: 50vh;
+    }
+
+    .error-number {
+        font-size: 96px;
+    }
+    
+    .error-text {
+        font-size: 18px;
+    }
+    
+    .error-link {
+        font-size: 14px;
+    }
+
+}
