@@ -3,26 +3,53 @@
     max-width: 1400px;
 }
 
+.carousel {
+    margin-bottom: 2rem;
+}
+
 .accommodation-container {
-    margin: 0 auto;
-}
-
-.tags-container {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
-.collapses-container {
+.accommodation-infos {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.collapse-style-list {
-    list-style-type: none;
+    flex-direction: column;
 }
 
 .accommodation-title {
     color: #FF6060;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.accommodation-location {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* .tag-rating {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.tags-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.accommodation-profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.collapses-container {
+    display: flex;
+    gap: 5rem;
+}
+
+.collapse-style-list {
+    list-style: none;
+    padding: .5rem;
 }
