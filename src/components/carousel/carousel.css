@@ -45,3 +45,21 @@
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 480px) {
+
+    .slider-container {
+        width: 335px;
+        height: 255px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .slider-container {
+        width: 280px;
+        height: 260px;
+    }
+
+}

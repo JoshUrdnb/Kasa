@@ -13,3 +13,16 @@
 .host-pic {
     border-radius: 50%;
 }
+
+@media screen and (max-width: 480px) {
+
+    .host-name {
+        font-size: 15px;
+        color: #FF6060;
+    }
+    
+    .host-pic {
+        width: 50px;
+    }
+
+}

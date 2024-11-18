@@ -29,7 +29,6 @@ export default function Accommodation() {
 								<Tags key={index} tag={tag} />
 							))}
 						</div>
-						{/* <Rating className="rating" rate={housingData.rating} /> */}
 					</div>
 				</div>
 
@@ -38,15 +37,6 @@ export default function Accommodation() {
 					<Rating className="rating" rate={housingData.rating} />
 				</div>
 			</div>
-
-			{/* <div className="tag-rating">
-				<div className="tags-container">
-					{housingData.tags.map((tag, index) => (
-						<Tags key={index} tag={tag} />
-					))}
-				</div>
-				<Rating className="rating" rate={housingData.rating} />
-			</div> */}
 
 			<div className="collapses-container">
 				<Collapse title="Description">

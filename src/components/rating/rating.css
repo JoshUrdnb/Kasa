@@ -2,3 +2,11 @@
     display: flex;
     gap: 0.5rem;
 }
+
+@media screen and (max-width: 480px) {
+
+    .rating-container {
+        width: 125px;
+    }
+
+}

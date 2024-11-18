@@ -10,6 +10,7 @@
 .accommodation-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
 .accommodation-infos {
@@ -28,20 +29,20 @@
     color: #555;
 }
 
-/* .tag-rating {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .tags-container {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .accommodation-profile {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     margin-bottom: 2rem;
+    gap: 1rem;
+    flex-basis: 1px;
+    text-align: right;
 }
 
 .collapses-container {
@@ -52,4 +53,38 @@
 .collapse-style-list {
     list-style: none;
     padding: .5rem;
+}
+
+@media screen and (min-width: 760px) {
+
+    .accommodation {
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .accommodation {
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    .accommodation-container {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .accommodation-profile {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .collapses-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
 }
