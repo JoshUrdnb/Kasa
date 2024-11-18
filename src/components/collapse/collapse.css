@@ -1,6 +1,6 @@
 .collapse-container {
     max-width: 80%;
-    margin: 10rem auto 0;
+    margin: 10px auto 50px;
     /* height: 50vh; */
 }
 
@@ -45,10 +45,10 @@
     animation: expand 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .collapse-container {
-        margin: 10px auto;
+        margin: 10px auto 50px;
     }
 
     .collapse {
