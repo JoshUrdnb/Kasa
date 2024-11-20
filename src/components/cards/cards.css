@@ -1,26 +1,27 @@
 .container {
-    padding: 20px;
     text-align: center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    max-width: 1240px;
 }
 
 .housings-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8rem;
+    gap: 60px;
     background-color: #F6F6F6;
-    padding: 4rem;
+    padding: 50px;
     border-radius: 25px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 @media (max-width: 1024px) {
     .housings-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+        gap: 60px;
         padding: 4rem;
+        margin: 0 20px 0 20px;
     }
 }
 
@@ -28,22 +29,28 @@
     .housings-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
-        padding: 2rem;
+        background: none;
+        padding: 0px;
+        margin: 0 10px 0 10px;
     }
 }
 
 @media (max-width: 480px) {
     .housings-grid {
         grid-template-columns: 1fr;
-        gap: 4rem;
-        padding: 3rem;
+        gap: 20px;
+        background: none;
+        padding: 0px;
+        margin: 0 10px 0 10px;
     }
 }
 
 @media (max-width: 375px) {
     .housings-grid {
         grid-template-columns: 1fr;
-        gap: 4rem;
-        padding: 2rem;
+        gap: 20px;
+        background: none;
+        padding: 0px;
+        margin: 0 10px 0 10px;
     }
 }
