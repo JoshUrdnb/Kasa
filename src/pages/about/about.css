@@ -1,0 +1,23 @@
+.about {
+    min-height: 70vh;
+}
+
+.collapse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.collapses {
+    max-width: 1023px;
+    margin: 10px 19px 50px 19px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .collapse-container {
+        margin: 10px 19px 50px 19px;
+    }
+
+}
