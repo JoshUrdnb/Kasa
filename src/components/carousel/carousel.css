@@ -11,12 +11,15 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: none;
     border: none;
     border-radius: 15px;
     padding: 10px;
     cursor: pointer;
     z-index: 1;
+    /* width: 46.68px; */
+    height: 79.2px;
+    flex-shrink: 0;
 }
 
 .prev {
@@ -38,12 +41,15 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    /* font-family: Montserrat; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
 }
 
 @media screen and (max-width: 480px) {

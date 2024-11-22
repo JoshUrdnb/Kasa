@@ -1,5 +1,5 @@
 .collapse-container {
-    max-width: 80%;
+    max-width: 1023px;
     margin: 10px auto 50px;
     /* height: 50vh; */
 }
@@ -48,7 +48,7 @@
 @media screen and (max-width: 1024px) {
 
     .collapse-container {
-        margin: 10px auto 50px;
+        margin: 10px 19px 50px 19px;
     }
 
     .collapse {
