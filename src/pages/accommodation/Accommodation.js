@@ -1,6 +1,6 @@
 import './accommodation.css'
-import { useParams } from 'react-router-dom' // Pour accéder aux paramètres d'URL
-import { kasaData } from '../../datas/data' // Importe les données de logements
+import { kasaData } from '../../datas/data'
+import { useParams, Navigate } from 'react-router-dom'
 import Carousel from '../../components/carousel/Carousel'
 import Tags from '../../components/tags/Tags'
 import Profile from '../../components/profile/Profile'
@@ -10,6 +10,10 @@ import Collapse from '../../components/collapse/Collapse'
 export default function Accommodation() {
 	const { id } = useParams() // Récupère l'ID du logement depuis l'URL
 	const housingData = kasaData.find((housing) => housing.id === id) // Cherche le logement correspondant dans kasaData
+
+	if (!housingData) {
+		return <Navigate to="/404" replace />
+	}
 
 	return (
 		<section className='accommodation'>
