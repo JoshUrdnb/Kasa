@@ -43,7 +43,8 @@
 @media screen and (max-width: 768px) {
 
     .banner-container {
-        margin: 0 10px 27px 10px;
+        /* margin: 0 10px 27px 10px; */
+        margin-bottom: 27px;
         height: 167.25px;
     }
 
