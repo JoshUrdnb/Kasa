@@ -2,6 +2,16 @@
     margin: 5rem auto 0;
     max-width: 1240px;
     min-height: 70vh;
+
+    @media screen and (min-width: 760px) {
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin: 2rem auto;
+        padding: 1rem;
+    }
 }
 
 .carousel {
@@ -12,6 +22,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
 }
 
 .accommodation-infos {
@@ -44,48 +59,25 @@
     gap: 1rem;
     flex-basis: 1px;
     text-align: right;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
 }
 
 .collapses-container {
     display: flex;
     gap: 5rem;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        gap: 1px;
+    }
 }
 
 .collapse-style-list {
     list-style: none;
     padding: .5rem;
-}
-
-@media screen and (min-width: 760px) {
-
-    .accommodation {
-        margin: 2rem auto;
-        padding: 1rem;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-
-    .accommodation {
-        margin: 2rem auto;
-        padding: 1rem;
-    }
-
-    .accommodation-container {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    .accommodation-profile {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-top: 2rem;
-    }
-
-    .collapses-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1px;
-    }
 }

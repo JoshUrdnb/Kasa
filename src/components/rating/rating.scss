@@ -1,12 +1,8 @@
 .rating-container {
     display: flex;
     gap: 0.5rem;
-}
 
-@media screen and (max-width: 480px) {
-
-    .rating-container {
+    @media screen and (max-width: 480px) {
         width: 125px;
     }
-
 }

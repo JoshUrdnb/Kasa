@@ -1,71 +1,65 @@
 .kasa-header {
     margin: 45px auto 50px;
     max-width: 1240px;
-	display: flex;
-	align-items: center;
-    justify-content: space-between;
-}
-
-.kasa-logo {
-    width: 200px;
-    /* height: 68px; */
-}
-
-.nav-links {
     display: flex;
-    gap: 3rem;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: gray;
-}
-
-.nav-links .active-link {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 375px) {
-
-    .kasa-header {
-        margin: 20px 20px 27px 20px;
-        /* padding: 5px; */
-    }
+    align-items: center;
+    justify-content: space-between;
 
     .kasa-logo {
-        width: 100px;
+        width: 200px;
+        /* height: 68px; */
     }
 
     .nav-links {
-        font-size: 12px;
-        text-transform: uppercase;
-        gap: 15px;
+        display: flex;
+        gap: 3rem;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+
+            &:hover {
+                color: gray;
+            }
+
+            &.active-link {
+                text-decoration: underline;
+            }
+        }
     }
-}
 
-@media screen and (min-width: 376px) and (max-width: 1024px) {
+    @media screen and (max-width: 375px) {
+        margin: 20px 20px 27px 20px;
+        /* padding: 5px; */
 
-    .kasa-header {
+        .kasa-logo {
+            width: 100px;
+        }
+
+        .nav-links {
+            font-size: 12px;
+            text-transform: uppercase;
+            gap: 15px;
+        }
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 1024px) {
         margin: 20px 20px 27px 20px;
         /* margin: 15px auto; */
         /* padding: 5px; */
-    }
 
-    .kasa-logo {
-        width: 145px;
-    }
+        .kasa-logo {
+            width: 145px;
+        }
 
-    .nav-links {
-        font-size: 14px;
-        text-transform: uppercase;
-        gap: 15px;
+        .nav-links {
+            font-size: 14px;
+            text-transform: uppercase;
+            gap: 15px;
+        }
     }
 }

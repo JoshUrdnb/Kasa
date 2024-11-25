@@ -5,76 +5,70 @@
     margin: auto;
     overflow: hidden;
     border-radius: 25px;
-}
 
-.slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-    /* width: 46.68px; */
-    height: 79.2px;
-    flex-shrink: 0;
-}
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+        /* width: 46.68px; */
+        height: 79.2px;
+        flex-shrink: 0;
 
-.prev {
-    left: 10px;
-}
+        &.prev {
+            left: 10px;
+        }
 
-.next {
-    right: 10px;
-}
+        &.next {
+            right: 10px;
+        }
+    }
 
-.gallery-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .gallery-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-.slider-pagination {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #FFF;
-    text-align: center;
-    /* font-family: Montserrat; */
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
-}
+    .slider-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #FFF;
+        text-align: center;
+        /* font-family: Montserrat; */
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        /* 25.668px */
+    }
 
-@media screen and (max-width: 480px) {
-
-    .slider-container {
+    @media screen and (max-width: 480px) {
         width: 100%;
         height: 255px;
+
+        .slider-svg {
+            width: 100%;
+            height: 40px;
+        }
     }
 
-    .slider-svg {
-        width: 100%;
-        height: 40px;
-    }
-
-}
-
-@media screen and (max-width: 320px) {
-
-    .slider-container {
+    @media screen and (max-width: 320px) {
         width: 280px;
         height: 260px;
-    }
 
-    .slider-svg {
-        width: 24px;
-        height: 40px;
+        .slider-svg {
+            width: 24px;
+            height: 40px;
+        }
     }
 }

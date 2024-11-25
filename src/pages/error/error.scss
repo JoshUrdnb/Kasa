@@ -5,64 +5,56 @@
     flex-direction: column;
     min-height: 80vh;
     text-align: center;
-}
 
-.error-number {
-    font-size: 404px;
-    color: #FF6060;
-    margin: 0;
-}
+    .error-number {
+        font-size: 404px;
+        color: #FF6060;
+        margin: 0;
+    }
 
-.error-text {
-    font-size: 58px;
-    color: #FF6060;
-    margin: 50px 0;
-}
+    .error-text {
+        font-size: 58px;
+        color: #FF6060;
+        margin: 50px 0;
+    }
 
-.error-link {
-    font-size: 36px;
-    font-weight: 500;
-    color: #333;
-    text-decoration: underline;
-    margin-top: 50px;
-}
+    .error-link {
+        font-size: 36px;
+        font-weight: 500;
+        color: #333;
+        text-decoration: underline;
+        margin-top: 50px;
+    }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .error-container {
+    @media (min-width: 768px) and (max-width: 1024px) {
         min-height: 60vh;
+
+        .error-number {
+            font-size: 240px;
+        }
+
+        .error-text {
+            font-size: 28px;
+        }
+
+        .error-link {
+            font-size: 24px;
+        }
     }
 
-    .error-number {
-        font-size: 240px;
-    }
-    
-    .error-text {
-        font-size: 28px;
-    }
-    
-    .error-link {
-        font-size: 24px;
-    }
+    @media (max-width: 480px) {
+        min-height: 60vh;
 
-}
+        .error-number {
+            font-size: 96px;
+        }
 
-@media (max-width: 480px) {
+        .error-text {
+            font-size: 18px;
+        }
 
-    .error-container {
-        min-height: 50vh;
+        .error-link {
+            font-size: 14px;
+        }
     }
-
-    .error-number {
-        font-size: 96px;
-    }
-    
-    .error-text {
-        font-size: 18px;
-    }
-    
-    .error-link {
-        font-size: 14px;
-    }
-
 }

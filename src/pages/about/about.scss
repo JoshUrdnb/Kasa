@@ -7,17 +7,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
+    @media screen and (max-width: 1024px) {
+        margin: 10px 19px 50px 19px;
+    }
 }
 
 .collapses {
     max-width: 1023px;
     margin: 10px 19px 50px 19px;
-}
-
-@media screen and (max-width: 1024px) {
-
-    .collapse-container {
-        margin: 10px 19px 50px 19px;
-    }
-
 }

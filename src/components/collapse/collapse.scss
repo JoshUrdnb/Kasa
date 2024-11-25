@@ -4,68 +4,63 @@
     overflow: hidden;
     transition: all 0.3s ease;
     width: 100%;
-}
 
-.collapse-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #ff5e5e;
-    color: #FBFBFB;
-    cursor: pointer;
-    border-radius: 5px;
-}
+    .collapse-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #ff5e5e;
+        color: #FBFBFB;
+        cursor: pointer;
+        border-radius: 5px;
 
-.collapse-header span {
-    display: flex;
-    align-items: center;
-    color: #FFF;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-}
+        span {
+            display: flex;
+            align-items: center;
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+        }
 
-/* Animation de l'icône */
-.collapse-header .arrow {
-    display: inline-block;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
-}
+        .arrow {
+            display: inline-block;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
 
-.collapse-header .arrow.open {
-    transform: rotate(-180deg);
-}
+            &.open {
+                transform: rotate(-180deg);
+            }
+        }
+    }
 
-/* Contenu collapsé */
-.collapse-content {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 15px;
-    background-color: #fbfbfb;
-    color: #333;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-    font-size: 16px;
-    line-height: 1.5;
-}
+    .collapse-content {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 15px;
+        background-color: #fbfbfb;
+        color: #333;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        font-size: 16px;
+        line-height: 1.5;
 
-.collapse-content.open {
-    max-height: 300px;
-    padding: 15px;
-}
+        &.open {
+            max-height: 300px;
+            padding: 15px;
+        }
+    }
 
-@media screen and (max-width: 1024px) {
-
-    .collapse {
+    @media screen and (max-width: 1024px) {
         margin: 1rem 0;
     }
 
-}
-
-@media screen and (max-width: 480px) {
-
-    .collapse-header span {
-        font-size: 13px;
-        line-height: 142.6%; /* 18.538px */
+    @media screen and (max-width: 480px) {
+        .collapse-header {
+            span {
+                font-size: 13px;
+                line-height: 142.6%;
+                /* 18.538px */
+            }
+        }
     }
-
 }
