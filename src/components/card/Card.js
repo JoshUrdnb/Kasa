@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './card.css'
+import './card.scss'
 
 function Card({ housing }) { // Reçoit un logement individuel en tant que prop
     return (

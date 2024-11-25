@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Gallery from '../gallery/Gallery'
-import './carousel.css'
+import './carousel.scss'
 
 function Slider({ gallery }) {
     const [currentIndex, setCurrentIndex] = useState(0) // Index de l'image affichée

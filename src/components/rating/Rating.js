@@ -1,4 +1,4 @@
-import './rating.css';
+import './rating.scss';
 
 function Rating({ rate }) {
     const clampedRate = Math.min(Math.max(rate, 0), 5)

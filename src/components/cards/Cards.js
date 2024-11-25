@@ -1,5 +1,5 @@
 import Card from '../card/Card'
-import './cards.css'
+import './cards.scss'
 
 function Cards({ housings }) { //Je passe {housings} comme argument de ma fonction Cards.
     return (

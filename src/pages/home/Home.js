@@ -1,3 +1,4 @@
+import './home.scss'
 import { kasaData } from '../../datas/data'
 import Banner from '../../components/banner/Banner'
 import HomeBanner from '../../assets/Image-banner.png'

@@ -1,4 +1,4 @@
-import './tags.css'
+import './tags.scss'
 
 function Tags({tag}) {
     return (
